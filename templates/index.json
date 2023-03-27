@@ -21,7 +21,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -37,7 +37,6 @@
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
-        "adapt_height_first_image": false,
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -53,7 +52,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Talk about your brand</p>",
+            "heading": "<p>Talk about your brand<\/p>",
             "heading_size": "h1"
           }
         },
@@ -69,6 +68,8 @@
         "text"
       ],
       "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
@@ -80,17 +81,24 @@
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
         "collection": "all",
         "products_to_show": 8,
         "columns_desktop": 4,
-        "color_scheme": "background-1",
+        "full_width": false,
         "show_view_all": false,
-        "swipe_on_mobile": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
+        "enable_quick_add": false,
         "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 28,
         "padding_bottom": 36
       }
@@ -128,6 +136,7 @@
         "heading_size": "h2",
         "desktop_layout": "left",
         "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
         "color_scheme": "background-1",
         "padding_top": 36,
         "padding_bottom": 36
@@ -137,8 +146,9 @@
       "type": "video",
       "settings": {
         "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": false,
         "color_scheme": "background-1",
@@ -192,11 +202,20 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false,
         "color_scheme": "background-1",
         "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "6cfd8b46-0d8f-49cd-bde0-dadee6378f66": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n  @import url('https:\/\/fonts.googleapis.com\/css2?family=Archivo:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&family=Secular+One&display=swap');\n<\/style>\n\n<div class=\"twcss-p-[40px]\">\n  <div class=\"twcss-mx-auto twcss-max-w-[1100px] twcss-rounded-[20px] twcss-bg-[#f1F1F1] twcss-px-[60px] twcss-pt-[60px]\">\n    <div class=\"twcss-flex twcss-justify-between\">\n      <div class=\"twcss-flex twcss-flex-1 twcss-flex-col twcss-self-center\">\n        <div class=\"twcss-flex-1\">\n          <p class=\"font-poppins twcss-text-[1.125rem] twcss-font-bold twcss-leading-[1.75] twcss-text-purple-600\">NEW<\/p>\n          <h1 class=\"font-archivo twcss-text-[3.75rem] twcss-font-bold twcss-leading-[1]\">ChatGPT Connected Buds<\/h1>\n          <h2 class=\"twcss-mt-[30px] twcss-text-[1.125rem] twcss-font-[500] twcss-leading-[1.75] twcss-text-gray-700\">Voice-activated <a href=\"\" class=\"twcss-text-purple-600\">ChatGPT<\/a> at your command.<\/h2>\n\n          <p class=\"twcss-mt-[30px]\">\n            <a href=\"\" class=\"font-secular twcss-rounded-[30px] twcss-border-2 twcss-border-black twcss-bg-black twcss-px-6 twcss-py-[6px] twcss-text-white hover:twcss-bg-transparent hover:twcss-text-black\"> Buy now <\/a>\n          <\/p>\n        <\/div>\n      <\/div>\n\n      <div class=\"twcss-flex-1\">\n        <p class=\"twcss-text-right\">\n          <img class=\"twcss-inline-block\" width=\"470px\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0736\/4437\/6360\/files\/abstract-processor-computer-digital-chip-printed-circuit-board-artificial-intelligence-technology-background-template-design-element-for-web-ban-2GGA0G1_1.png?v=1679929547&width=535\" alt=\"\" srcset=\"\" \/>\n        <\/p>\n      <\/div>\n    <\/div>\n  <\/div>\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
@@ -206,6 +225,7 @@
     "featured_collection",
     "collage",
     "video",
-    "multicolumn"
+    "multicolumn",
+    "6cfd8b46-0d8f-49cd-bde0-dadee6378f66"
   ]
 }
